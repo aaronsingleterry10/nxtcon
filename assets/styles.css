@@ -106,16 +106,17 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.hero-img {
+.hero-img, .hero-content {
     width: 85%;
     max-width: 600px;
 }
 .hero-content, .hero-info {
     font-family: 'helvetica-bold';
-    color: #FFF;
+    color: #ebebf3;
 }
 .hero-content p {
-    font-size: 32px;
+    margin-top: 10px;
+    font-size: 24px;
 }
 h1 {
     text-align: center;
@@ -127,6 +128,7 @@ h2 {
     color: var(--light-font-color);
     font-size: 46px;
     text-align: center;
+    font-style: italic;
 }
 h3 {
     font-family: 'helvetica-bold';
@@ -165,7 +167,7 @@ video {
     border-radius: 20px;
 }
 .btn-wrap, .btn-wrap-2 {
-    /* margin-top: 3rem; */
+    margin-top: 3rem;
     font-family: 'monolight';
     text-align: center;
 }
@@ -182,11 +184,11 @@ video {
     color: #FFF;
     background-color: #F24D47;
 }
-.speakers-section {
+.speakers-section, .tickets-section {
     /* background-color: #FF6B35; */
     padding: 3rem 1rem;
 }
-.speakers-wrap {
+.speakers-wrap, .tickets-wrap {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 3rem;
@@ -194,7 +196,7 @@ video {
     margin: 0 auto;
     place-items: center;
 }
-.speaker {
+.speaker, .ticket-card {
     width: 100%;
     max-width: 400px;
     background-color: #26AF66;
@@ -202,9 +204,16 @@ video {
     padding: 2rem 0;
     border-radius: 20px;
 }
-.speaker-img {
+.speaker {
+    background-color: transparent;
+    padding: 1rem 0;
+}
+.speaker-img, .ticket-img {
     width: 100%;
     max-width: 400px;
+}
+.speaker-img {
+    margin-bottom: 20px;
 }
 .footer-container h3 {
     font-family: 'helvetica-bold';
@@ -315,14 +324,20 @@ video {
 
 @media screen and (max-width: 541px) {
     .hero-banner {
-        height: 96vh;
+        height: 93vh;
     }
-    .speakers-wrap {
+    .hero-content p {
+        font-size: 18px;
+    }
+    .speakers-wrap, .tickets-wrap {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
     .content-text {
         line-height: 30px;
         font-size: 19px;
+    }
+    h2 {
+        font-size: 34px;
     }
 }
 
