@@ -324,7 +324,7 @@ video {
 
 @media screen and (max-width: 541px) {
     .hero-banner {
-        height: 93vh;
+        height: 65vh;
     }
     .hero-content p {
         font-size: 18px;
