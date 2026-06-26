@@ -3,6 +3,16 @@
     --light-font-color: #FFF;
     --main-bg-color: #FF1359;
     --purple: #866AF7;
+    --nxt-red: #F35A54;
+    --nxt-green: #18A75E;
+    --nxt-cyan: #15CAF6;
+    --nxt-pink: #E38AF2;
+    --nxt-purple: #7B64F2;
+
+    --nxt-bg: #60615F;
+    --nxt-bg-dark: #111827;
+    --nxt-bg-deep: #17141F;
+    --nxt-white: #EDECF4;
 }
 @font-face {
     font-family: 'monolight';
@@ -30,7 +40,7 @@
 }
 body {
     margin: 0;
-    background-color: #111827;
+    background-color: var(--nxt-bg-deep);
 }
 header {
     position: sticky;
@@ -185,8 +195,10 @@ video {
     background-color: #F24D47;
 }
 .speakers-section, .tickets-section {
-    /* background-color: #FF6B35; */
     padding: 3rem 1rem;
+}
+.tickets-section {
+    background-color: var(--nxt-green);
 }
 .speakers-wrap, .tickets-wrap {
     display: grid;
@@ -199,10 +211,13 @@ video {
 .speaker, .ticket-card {
     width: 100%;
     max-width: 400px;
-    background-color: #26AF66;
+    background-color: var(--nxt-white);
     text-align: center;
     padding: 2rem 0;
     border-radius: 20px;
+}
+.ticket-title {
+    color: var(--nxt-bg-deep);
 }
 .speaker {
     background-color: transparent;
