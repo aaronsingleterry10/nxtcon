@@ -96,7 +96,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url('https://churchunlimited.online/images/site_uploads/u27-bg.webp');
+    background-image: url('img/u27-bg.webp');
     background-position: 50% 100%;
     background-size: cover;
     height: 100dvh;
